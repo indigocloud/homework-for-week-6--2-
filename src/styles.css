@@ -1,0 +1,32 @@
+h1 {
+  color: white;
+  text-shadow: 2px 2px #808080;
+}
+h2 {
+  font-size: 30px;
+}
+.sunEmoji {
+  height: auto;
+  width: auto;
+}
+.rainEmoji {
+  position: relative;
+  right: -px;
+  height: auto;
+  width: auto;
+}
+div.imgContainer {
+  text-align: center;
+}
+div.container {
+  font-family: "Crimson Text", serif;
+}
+p {
+  font-size: 25px;
+}
+.box-paragraph {
+  background-color: grey;
+  color: white;
+  font-size: 25px;
+  border-radius: 30px;
+}
