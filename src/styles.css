@@ -30,3 +30,9 @@ p {
   font-size: 25px;
   border-radius: 30px;
 }
+.wind-speed {
+  font-size: 30px;
+}
+.precipitation {
+  font-size: 30px;
+}
