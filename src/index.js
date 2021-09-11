@@ -35,9 +35,10 @@ let month = months[now.getMonth()];
 
 let temperature = 17;
 let city = "Berlin";
+let windElement = "5";
 
-h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees`;
 
+h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees | Wind speed: ${windElement}km/h`;
 // function search(event) {
 //   event.preventDefault();
 //   let searchInput = document.querySelector("#search-text-input");
@@ -49,10 +50,14 @@ h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${yea
 //Week 5 below
 
 function displayWeatherCondition(response) {
+  let windElement = document.querySelector("#wind");
+  windElement = Math.round(response.data.wind.speed);
   city = response.data.name;
   temperature = Math.round(response.data.main.temp);
-  h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees`;
+  
+  h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees | Wind speed ${windElement}km/h`;
 }
+
 
 function convertToFahrenheit(event) {
   event.preventDefault();

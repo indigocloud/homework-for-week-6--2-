@@ -21,6 +21,8 @@ h2 {
 }
 div.imgContainer {
   text-align: center;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 div.container {
   font-family: "Crimson Text", serif;
@@ -34,7 +36,7 @@ p {
   font-size: 25px;
   border-radius: 30px;
 }
-.wind-speed {
+.wind {
   font-size: 30px;
 }
 .precipitation {
