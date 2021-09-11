@@ -42,3 +42,9 @@ p {
 .precipitation {
   font-size: 30px;
 }
+.description {
+  font-size: 30px;
+}
+li {
+  text-transform: capitalize;
+}
