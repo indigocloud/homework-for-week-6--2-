@@ -33,7 +33,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-let temperature = 17;
+let temperature = "17";
 let city = "Berlin";
 let windElement = "5";
 
@@ -52,10 +52,12 @@ h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${yea
 function displayWeatherCondition(response) {
   let windElement = document.querySelector("#wind");
   windElement = Math.round(response.data.wind.speed);
+  let descriptionElement = document.querySelector("#description")
   city = response.data.name;
   temperature = Math.round(response.data.main.temp);
-  
+  descriptionElement.innerHTML = (response.data.weather[0].description)
   h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees | Wind speed ${windElement}km/h`;
+  
 }
 
 
