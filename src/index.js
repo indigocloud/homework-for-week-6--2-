@@ -55,9 +55,12 @@ function displayWeatherCondition(response) {
   let descriptionElement = document.querySelector("#description")
   city = response.data.name;
   let humidityElement = document.querySelector("#humidity");
+  let iconELement = document.querySelector("#icon");
   temperature = Math.round(response.data.main.temp);
   humidityElement.innerHTML = (response.data.main.humidity);
   descriptionElement.innerHTML = (response.data.weather[0].description);
+  iconELement.setAttribute("src",
+  `http://openweathermap.org/img/wn/04d@2x.png`);
   h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees | Wind speed ${windElement}km/h`;
 }
 
