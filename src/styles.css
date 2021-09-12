@@ -47,4 +47,9 @@ p {
 }
 li {
   text-transform: capitalize;
+  list-style-type: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
