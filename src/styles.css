@@ -45,6 +45,9 @@ p {
 .description {
   font-size: 30px;
 }
+.humidity {
+  font-size: 30px;
+}
 li {
   text-transform: capitalize;
   list-style-type: none;
