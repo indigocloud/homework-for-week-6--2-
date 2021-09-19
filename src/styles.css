@@ -4,9 +4,11 @@ h1 {
   background-color: #808080;
   margin-left: -15px;
   margin-right: -15px;
+  
 }
 h2 {
   font-size: 30px;
+  
 }
 
 .sunEmoji {
@@ -25,32 +27,39 @@ div.imgContainer {
   margin-right: -15px;
 }
 div.container {
-  font-family: "Crimson Text", serif;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 p {
   font-size: 25px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .box-paragraph {
   background-color: grey;
   color: white;
   font-size: 25px;
   border-radius: 30px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .wind {
   font-size: 30px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .precipitation {
   font-size: 30px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .description {
   font-size: 30px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .humidity {
   font-size: 30px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 li {
   text-transform: capitalize;
   list-style-type: none;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 ul {
   margin: 0;
