@@ -56,9 +56,11 @@ function displayWeatherCondition(response) {
   city = response.data.name;
   let humidityElement = document.querySelector("#humidity");
   let iconELement = document.querySelector("#icon");
+  let temperature = document.querySelector("#temp");
   temperature = Math.round(response.data.main.temp);
   humidityElement.innerHTML = (response.data.main.humidity);
   descriptionElement.innerHTML = (response.data.weather[0].description);
+
   iconELement.setAttribute("src",
   `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees | Wind speed ${windElement}km/h`;
@@ -87,6 +89,14 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
+function displayFahrenheitTemperature(event) {
+event.preventDefault();
+let fahrenheitTemperature = (14 * 9)/ 5 + 32;
+let temperature = document.querySelector("#temperature")
+temperature = fahrenheitTemperature;
+h2.innerHTML.temperature= fahrenheitTemperature;
+}
+
 let form = document.querySelector("#search-form");
 
 form.addEventListener("submit", handleSubmit);
@@ -97,3 +107,5 @@ function searchLocation(position) {
 
   axios.get(apiUrl).then(displayWeatherCondition);
 }
+let fahrenheit =document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", displayFahrenheitTemperature);
