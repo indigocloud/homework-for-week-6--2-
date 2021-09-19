@@ -2,21 +2,27 @@ h1 {
   color: white;
   text-shadow: 2px 2px #808080;
   background-color: #808080;
-  margin-left: -15px;
-  margin-right: -15px;
   text-align: center;
+  width: 100%;
+  border-radius: 30px;
+
   
 }
 h2 {
   font-size: 30px;
   
 }
+body { 
+  border: white;
+  border-radius: 20px;
+  width: 100%;
+}
 
 
 .sunEmoji {
   height: auto;
   width: auto;
-  float: right;
+ 
 }
 
 div.imgContainer {
@@ -27,6 +33,7 @@ div.imgContainer {
 div.container {
   font-family: "Lucida Console", "Courier New", monospace;
   background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  border-radius: 5px;
 
 }
 p {
@@ -39,10 +46,9 @@ p {
   font-size: 25px;
   border-radius: 30px;
   font-family: "Lucida Console", "Courier New", monospace;
-  width: 100%;
+  width: 95%;
   text-align: center;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin: 0 auto;
 }
 .wind {
   font-size: 30px;
@@ -74,4 +80,10 @@ weatherIcon {
   display: block;
   margin: 0 auto;
   text-align: center;
+}
+githubrep {
+  color: white;
+}
+githubrep:hover {
+  color: white;
 }
