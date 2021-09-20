@@ -58,6 +58,9 @@ function displayWeatherCondition(response) {
   let iconELement = document.querySelector("#icon");
   let temperature = document.querySelector("#temp");
   temperature = Math.round(response.data.main.temp);
+
+  celsiusTemperature = response.data.main.temp;
+
   humidityElement.innerHTML = (response.data.main.humidity);
   descriptionElement.innerHTML = (response.data.weather[0].description);
 
@@ -107,5 +110,21 @@ function searchLocation(position) {
 
   axios.get(apiUrl).then(displayWeatherCondition);
 }
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  temperature = fahrenheitTemperature;
+  h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees | Wind speed: ${windElement}km/h`;
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  temperature = celsiusTemperature;
+  h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees | Wind speed: ${windElement}km/h`;
+}
 let fahrenheit =document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", displayFahrenheitTemperature);
+
+let celsius =document.querySelector("#celsius");
+celsius.addEventListener("click", displayCelsiusTemperature);
