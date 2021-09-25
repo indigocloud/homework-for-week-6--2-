@@ -36,6 +36,7 @@ let month = months[now.getMonth()];
 let temperature = "17";
 let city = "Berlin";
 let windElement = "5";
+let celsiusTemperature = 0;
 
 
 h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees | Wind speed: ${windElement}km/h`;
