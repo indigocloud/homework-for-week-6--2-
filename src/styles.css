@@ -66,6 +66,10 @@ p {
   font-size: 30px;
   font-family: "Lucida Console", "Courier New", monospace;
 }
+.weather-forecast{
+  margin-top: 20px;
+  text-align: center;
+}
 li {
   text-transform: capitalize;
   list-style-type: none;
