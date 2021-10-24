@@ -70,6 +70,11 @@ function displayWeatherCondition(response) {
   h2.innerHTML = `${city} <div> ${day} ${month} ${date}, ${hour}:${minutes}, ${year}, ${temperature} degrees | Wind speed ${windElement}km/h`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  forecastElement.innerHTML = "Forecast";
+}
 
 function convertToFahrenheit(event) {
   event.preventDefault();
