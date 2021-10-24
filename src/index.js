@@ -76,6 +76,7 @@ function displayForecast() {
   forecastElement.innerHTML = "Forecast";
 }
 
+
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -134,3 +135,5 @@ fahrenheit.addEventListener("click", displayFahrenheitTemperature);
 
 let celsius =document.querySelector("#celsius");
 celsius.addEventListener("click", displayCelsiusTemperature);
+
+displayForecast();
