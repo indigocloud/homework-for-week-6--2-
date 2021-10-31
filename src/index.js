@@ -75,16 +75,16 @@ function displayForecast() {
 
   forecastElement.innerHTML = `
       <div class="box-paragraph" class="weather-forecast" id="forecast">
-                    5 day forecast
-                    <div class="row">
-                      <div class="col-2">
-                      <div class="date">
+              5 day forecast
+                <div class="row">
+                    <div class="col-2">
+                       <div class="date">
                       Thur
                       </div>
-                      <img src="images/sunCloud.png" height="50" width="50"/>
+                   <img src="images/sunCloud.png" height="50" width="50"/>
                       18 12
-                    </div>
-                  </div>
+              </div>
+         </div>
     `              
 }
 
