@@ -36,7 +36,6 @@ div.container {
   font-family: "Lucida Console", "Courier New", monospace;
   background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
   border-radius: 5px;
-  margin: 10px auto;
   text-align: center;
   width: 100%;
 
@@ -53,8 +52,7 @@ p {
   font-family: "Lucida Console", "Courier New", monospace;
   width: 95%;
   text-align: center;
-  margin: 0 auto;
-  display: block;
+ 
 }
 .wind {
   font-size: 30px;
