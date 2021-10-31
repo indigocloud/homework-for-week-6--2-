@@ -82,7 +82,7 @@ function displayForecast() {
                       Thur
                       </div>
                    <img src="images/sunCloud.png" height="50" width="50"/>
-                      18 12
+                      19 12
               </div>
          </div>
     `;              
