@@ -84,7 +84,7 @@ getForecast(response.data.coord)
 }
 
 function displayForecast(response) {
-console.log(response.data);
+
   
   let forecastElement = document.querySelector("#forecast");
 
