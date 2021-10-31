@@ -91,8 +91,8 @@ weatherIcon {
 }
 githubrep {
   color: white;
-  margin: 0 auto;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 
 }
 githubrep:hover {
