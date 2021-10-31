@@ -73,7 +73,19 @@ function displayWeatherCondition(response) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  forecastElement.innerHTML = "Forecast";
+  forecastElement.innerHTML = `
+      <div class="box-paragraph" class="weather-forecast" id="forecast">
+                    5 day forecast
+                    <div class="row">
+                      <div class="col-2">
+                      <div class="date">
+                      Thur
+                      </div>
+                      <img src="images/sunCloud.png" height="50" width="50"/>
+                      18 12
+                    </div>
+                  </div>
+    `              
 }
 
 
