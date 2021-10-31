@@ -1,7 +1,7 @@
 h1 {
   color: white;
   text-shadow: 2px 2px #808080;
-  background-color: #808080;
+  background-color: #ffb6c1;
   text-align: center;
   width: 100%;
   border-radius: 30px;
@@ -41,7 +41,7 @@ p {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 .box-paragraph {
-  background-color: grey;
+  background-color: #ffb6c1;
   color: white;
   font-size: 25px;
   border-radius: 30px;
