@@ -36,8 +36,8 @@ div.container {
   border-radius: 5px;
   display: block;
   margin: 10px auto;
-  padding: 10px;
   text-align: center;
+  width: 100%;
 
 }
 p {
