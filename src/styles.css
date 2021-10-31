@@ -52,6 +52,7 @@ p {
   font-family: "Lucida Console", "Courier New", monospace;
   width: 95%;
   text-align: center;
+  margin-block: 0 auto;
  
 }
 .wind {
