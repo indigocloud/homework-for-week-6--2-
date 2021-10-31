@@ -32,7 +32,7 @@ div.imgContainer {
 }
 div.container {
   font-family: "Lucida Console", "Courier New", monospace;
-  background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
   border-radius: 5px;
 
 }
