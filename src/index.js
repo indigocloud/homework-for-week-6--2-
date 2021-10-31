@@ -85,7 +85,7 @@ function displayForecast() {
                       18 12
               </div>
          </div>
-    `              
+    `;              
 }
 
 
