@@ -73,7 +73,9 @@ function displayWeatherCondition(response) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  forecastElement.innerHTML = `
+  let forecastHTML = "";
+
+    forecastHTML = forecastHTML + `
       <div class="box-paragraph" class="weather-forecast" id="forecast">
               5 day forecast
                 <div class="row">
@@ -85,7 +87,8 @@ function displayForecast() {
                       19 12
               </div>
          </div>
-    `;              
+    `;       
+forecastElement.innerHTML = forecastHTML;        
 }
 
 
