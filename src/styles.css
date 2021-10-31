@@ -52,6 +52,7 @@ p {
   font-size: 25px;
   border-radius: 30px;
   font-family: "Lucida Console", "Courier New", monospace;
+  width: 200px;
   text-align: center;
   margin: 0 auto;
   display: block;
