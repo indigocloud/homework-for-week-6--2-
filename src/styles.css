@@ -43,6 +43,7 @@ div.container {
 p {
   font-size: 25px;
   font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
 }
 .box-paragraph {
   background-color: #ffb6c1;
