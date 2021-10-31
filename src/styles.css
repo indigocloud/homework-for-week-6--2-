@@ -36,6 +36,8 @@ div.container {
   background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
   border-radius: 5px;
   width: 100%;
+  margin: 0 auto;
+  text-align: center;
 
 }
 p {
