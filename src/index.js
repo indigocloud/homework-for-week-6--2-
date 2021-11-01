@@ -54,7 +54,7 @@ function getForecast(coordinates) {
 
 console.log(coordinates);
 let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid= ${apiKey}&units=metric`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
 console.log(apiUrl);
 axios.get(apiUrl).then(displayForecast);
 }
@@ -91,7 +91,7 @@ let forecast = response.data.daily;
 let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
 
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (forecastDay) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
@@ -175,4 +175,3 @@ fahrenheit.addEventListener("click", displayFahrenheitTemperature);
 let celsius =document.querySelector("#celsius");
 celsius.addEventListener("click", displayCelsiusTemperature);
 
-displayForecast();
