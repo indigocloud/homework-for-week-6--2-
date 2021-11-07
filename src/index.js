@@ -187,3 +187,4 @@ fahrenheit.addEventListener("click", displayFahrenheitTemperature);
 let celsius =document.querySelector("#celsius");
 celsius.addEventListener("click", displayCelsiusTemperature);
 
+search ("Berlin");
