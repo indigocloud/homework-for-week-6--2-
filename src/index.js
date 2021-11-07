@@ -118,7 +118,7 @@ let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
           <span class="weather-forecast-temperature-min"> ${Math.round(forecastDay.temp.min)}° </span>
         </div>
       </div>
-  `;
+      `;
     }
   });
 
