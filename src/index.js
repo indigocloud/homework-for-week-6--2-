@@ -113,8 +113,8 @@ let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
           width="42"
         />
         <div class="weather-forecast-temperatures">
-          <span class="weather-forecast-temperature-max"> ${math.round(forecastDay.temp.max)} </span>
-          <span class="weather-forecast-temperature-min"> ${math.round(forecastDay.temp.min)} </span>
+          <span class="weather-forecast-temperature-max"> ${Math.round(forecastDay.temp.max)} </span>
+          <span class="weather-forecast-temperature-min"> ${Math.round(forecastDay.temp.min)} </span>
         </div>
       </div>
   `;
